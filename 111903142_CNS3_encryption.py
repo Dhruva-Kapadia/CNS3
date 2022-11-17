@@ -1,4 +1,4 @@
-key = "11101110110110101111001110011011"
+key = "110111000110111100111111"
 sk1 = int(key[0:4],2)
 sk2 = int(key[4:8],2)
 sk3 = int(key[8:12],2)
@@ -6,7 +6,7 @@ sk4 = int(key[12:16],2)
 sk5 = int(key[16:20],2)
 sk6 = int(key[20:24],2)
 
-plaintext = "0100000101101101"
+plaintext = "1001110010101100"
 x1 = int(plaintext[0:4],2)
 x2 = int(plaintext[4:8],2)
 x3 = int(plaintext[8:12],2)
@@ -27,5 +27,5 @@ s12 = (s3 ^ s9)
 s13 = (s2 ^ s10)
 s14 = (s4 ^ s10)
 
-ciphertext = bin(s11)[2:].zfill(4) + bin(s12)[2:].zfill(4) + bin(s13)[2:].zfill(4) + bin(s14)[2:].zfill(4)
+ciphertext = bin(s11)[2:].zfill(4) + bin(s13)[2:].zfill(4) + bin(s12)[2:].zfill(4) + bin(s14)[2:].zfill(4)
 print(ciphertext)
